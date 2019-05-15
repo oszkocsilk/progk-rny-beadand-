@@ -11,7 +11,6 @@ import javafx.stage.Stage;
 /**
  * Blows the bomb is you choose it.
  */
-
 public class BlowedUp implements mezo{
 
     private Aknakereso aknakereso;
@@ -20,7 +19,6 @@ public class BlowedUp implements mezo{
      *Calls the created @aknakereso.
      * @param aknakereso the created Aknakereso
      */
-
     public BlowedUp(Aknakereso aknakereso) {
         this.aknakereso = aknakereso;
     }
@@ -47,7 +45,6 @@ public class BlowedUp implements mezo{
      * @param title az új ablak címe
      * @param message az új ablak üzenete
      */
-
     public static void display(String title, String message) {
         Stage window = new Stage();
 

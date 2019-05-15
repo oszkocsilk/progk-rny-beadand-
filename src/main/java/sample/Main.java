@@ -4,7 +4,6 @@ package sample;
         import javafx.scene.Scene;
         import javafx.stage.Stage;
 
-
 /**
  * Creates the main window of the program.
  */
@@ -15,7 +14,6 @@ public class Main extends Application {
      * @param primaryStage first window,which you can see.
      * @throws Exception if exception occured.
      */
-
     @Override
     public void start(Stage primaryStage) throws Exception{
 

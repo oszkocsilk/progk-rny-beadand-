@@ -6,7 +6,6 @@ import java.util.List;
 /**
  * Blows those buttons which has 0 value and the neighbours of the clicked button.
  */
-
 public class NullBlower implements mezo{
 
     private Akna akna= new Akna();
@@ -18,17 +17,14 @@ public class NullBlower implements mezo{
      */
     public void Blower(ArrayList<Integer> toClear){
 
-        if(isEmptyList(toClear))
-        {
+        if(isEmptyList(toClear)){
             return;
         }
-        else
-        {
+        else{
             int i=toClear.get(0)/100;
             int j=toClear.get(0)%100;
             toClear.remove(0);
-            if(counter[i][j]==0)
-            {
+            if(counter[i][j]==0){
                 if(i>0 && j>0 && !mezo[i-1][j-1].isDisabled()) {                                                         //bal felső
                     mezo[i - 1][j - 1].setText(counter[i - 1][j - 1] + "");
                     if (counter[i - 1][j - 1] == 0) {
@@ -130,7 +126,6 @@ public class NullBlower implements mezo{
      *
      * @return number of disabled buttons.
      */
-
     public int getDisabledCounter() {
         return disabledCounter;
     }
@@ -148,7 +143,6 @@ public class NullBlower implements mezo{
      * @param list what the metod watches if it is empty.
      * @return if the list is empty.
      */
-
     public boolean isEmptyList(List list){
         if(list.size()==0)
             return true;

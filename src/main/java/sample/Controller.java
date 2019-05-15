@@ -29,7 +29,6 @@ public class Controller implements mezo {
     int disabled=0;
     private boolean win;
 
-
     private Akna akna=new Akna();
     private Aknakereso aknakereso;
     private BlowedUp b;
@@ -37,13 +36,14 @@ public class Controller implements mezo {
 
     ArrayList<Integer> toClear = new ArrayList<Integer>();
     NullBlower nullBlower = new NullBlower();
+
     /**
      * Calling MathThings.
      */
     MathThings s=new MathThings();
 
-
     EventHandler<MouseEvent> eventHandler = new EventHandler<>() {
+
         /**
          *Watches the mouse click, if it is on a button.
          * @param event Event of the mouse click
@@ -91,7 +91,6 @@ public class Controller implements mezo {
     /**
      *Tests if you win or not.
      */
-
     public void win() {
         for (int i = 0; i < Aknakereso.counter[0].length; i++) {
             for (int j = 0; j < Aknakereso.counter.length; j++) {
@@ -183,7 +182,6 @@ public class Controller implements mezo {
      *
      * @return gives back the value of Disabled buttons.
      */
-
     public int getDisabled() {
         return disabled;
     }

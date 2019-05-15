@@ -10,8 +10,8 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  *
  */
-
 public class MathThingsTest {
+
     /**
      *
      */
@@ -24,13 +24,11 @@ public class MathThingsTest {
 
         assertEquals(1000,score.score(first,secound));
 
-
     }
 
     /**
      *
      */
-
     @Test
     void makeList(){
         MathThings score=new MathThings();
@@ -43,7 +41,6 @@ public class MathThingsTest {
         assertEquals(0,list.get(0));
         assertEquals(100,list.get(2));
         assertEquals(401,list.get(9));
-
 
     }
 }

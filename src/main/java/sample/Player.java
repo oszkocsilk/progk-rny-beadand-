@@ -9,7 +9,6 @@ import  javax.persistence.*;
 @Table(name = "Akna")
 public class Player {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer ID;
@@ -19,7 +18,6 @@ public class Player {
      *
      * @return ID of player.
      */
-
     public Integer getID() {
         return ID;
     }
@@ -28,7 +26,6 @@ public class Player {
      *
      * @param ID sets ID of player.
      */
-
     public void setID(Integer ID) {
         this.ID = ID;
     }
@@ -37,7 +34,6 @@ public class Player {
      *
      * @return the score of the player.
      */
-
     public double getScore() {
         return Score;
     }
@@ -46,7 +42,6 @@ public class Player {
      *
      * @param Score the score of the player.
      */
-
     public void Score(double Score) {
         Score = Score;
     }
@@ -56,7 +51,6 @@ public class Player {
      * @param ID  ID of the player.
      * @param Score the score of the player.
      */
-
     public Player(Integer ID, double Score) {
         this.ID = ID;
         this.Score = Score;
