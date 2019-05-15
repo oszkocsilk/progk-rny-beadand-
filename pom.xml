@@ -10,16 +10,20 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>10</maven.compiler.source>
         <maven.compiler.target>10</maven.compiler.target>
-        <!--<exec.cleanupDaemonThreads>false</exec.cleanupDaemonThreads>-->
-        <!--<dependency.locations.enabled>false</dependency.locations.enabled>-->
         <exec.mainClass>sample.AppLauncher</exec.mainClass>
     </properties>
+    <description>Minesweeper game-Aknakereso játék</description>
     <developers>
         <developer>
             <name>Oszkocsil Krisztián</name>
             <email>oszkocsilk@gmail.com</email>
         </developer>
     </developers>
+    <scm>
+        <url>https://github.com/oszkocsilk/Progkorny-bead</url>
+        <connection>scm:git://github.com/oszkocsilk/Progkorny-bead</connection>
+        <developerConnection>scm:git:git@github.com/oszkocsilk/Progkorny-bead</developerConnection>
+    </scm>
     <dependencies>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -118,7 +122,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.46</version>
+            <version>5.1.10</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -220,7 +224,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.2.1</version>
                 <executions>
                     <execution>
                         <goals>

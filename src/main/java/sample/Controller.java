@@ -37,6 +37,10 @@ public class Controller implements mezo {
 
     ArrayList<Integer> toClear = new ArrayList<Integer>();
     NullBlower nullBlower = new NullBlower();
+    /**
+     * Calling MathThings.
+     */
+    MathThings s=new MathThings();
 
 
     EventHandler<MouseEvent> eventHandler = new EventHandler<>() {
@@ -118,7 +122,7 @@ public class Controller implements mezo {
 
                 if (win==true) {
 
-                    score = ( akna.getNumberOfBombs() * 1000 )   /   ( timer / 60 );
+                    score= s.score(akna.getNumberOfBombs(),timer);
                     data(score);
                     System.out.println("score értéke:"+getScore());
                     b.display("WIN", "YOU WIN!\nYour score is: "+score);
@@ -153,11 +157,11 @@ public class Controller implements mezo {
             em = emf.createEntityManager();
             createPlayer(Score);
             em.close();
-            emf.close();
+
         }
 
     /**
-     *Makes a new player, whith an ID and pushes up to the database.
+     *Makes a new player, with an ID and pushes up to the database.
      * @param Score the score of the current player.
      */
     private static void createPlayer(double Score) {
